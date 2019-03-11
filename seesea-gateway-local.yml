@@ -27,9 +27,10 @@ spring:
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     #useGlobalDataSourceStat=true # 合并多个DruidDataSource的监控数据
-jasypt:
-  encryptor:
-    password: EbfYkitulv73I2p0mXI50JMXoaxZTKJ7
+  rabbitmq:
+    addresses: ENC(7YHQty028wZCP6oNSrdaX7J2Bio1s+U+GPZsxcZvjIpS56v1CmUNYV0sAEX0lSOLL5mMAbY07PFg+aupRz21rZF2E8gkSLnsWC/nydd4Fac7xmHl4JdL+Sz47gVnQO0u)
+    username: ENC(SdiKugJdDr7Oa58gR6IT6xEJQBcSI4Rb)
+    password: ENC(h/secgaoa+2+cBMDky2lfwIvwf+n1qTKCu9XdWJHxObCS2tPdpZC0fIP7RQYLcie)
 mybatis:
   type-aliases-package: com.seesea.gateway.entity.po
   mapper-locations: classpath:mybatis/*.xml
