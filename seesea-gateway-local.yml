@@ -38,3 +38,8 @@ mapper:
   mappers: com.seesea.gateway.BaseMapper
   not-empty: false
   identity: MYSQL
+#刷新
+management:
+  endpoint:
+    bus-refresh:
+      enabled: true
