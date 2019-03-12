@@ -38,3 +38,12 @@ mapper:
   mappers: com.seesea.gateway.BaseMapper
   not-empty: false
   identity: MYSQL
+
+zuul:
+  routes:
+    gateway:
+      path: /gateway/**
+      serviceId: seesea-gateway
+  host:
+    connect-timeout-millis: 30000
+    socket-timeout-millis: 30000

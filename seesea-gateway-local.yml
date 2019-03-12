@@ -43,3 +43,11 @@ management:
   endpoint:
     bus-refresh:
       enabled: true
+zuul:
+  routes:
+    gateway:
+      path: /gateway/**
+      serviceId: seesea-gateway
+  host:
+    connect-timeout-millis: 30000
+    socket-timeout-millis: 30000
